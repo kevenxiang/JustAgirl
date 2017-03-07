@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfW-wA-HQw">
+                    <rect key="frame" x="8" y="8" width="84" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.096371644295302011" blue="0.044961199664429533" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RBc-p7-Axs">
+                    <rect key="frame" x="8" y="34" width="584" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="IAH-cL-kjg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PF2-RV-UGd" customClass="BaseButton">
+                    <rect key="frame" x="8" y="107" width="584" height="38"/>
+                    <color key="backgroundColor" red="0.46730809559999997" green="0.6104223862" blue="0.32930785309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="nI0-6s-xe4"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="lxb-fy-ofa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QR7-5p-Y3t">
+                    <rect key="frame" x="499" y="69" width="93" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="93" id="3ik-Ky-KsB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="注册协议"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RBc-p7-Axs" firstAttribute="top" secondItem="KfW-wA-HQw" secondAttribute="bottom" constant="9" id="5VT-tX-HI7"/>
+                <constraint firstItem="KfW-wA-HQw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="7eJ-TM-Lcr"/>
+                <constraint firstAttribute="trailing" secondItem="PF2-RV-UGd" secondAttribute="trailing" constant="8" id="JRd-Ew-2iS"/>
+                <constraint firstItem="QR7-5p-Y3t" firstAttribute="trailing" secondItem="RBc-p7-Axs" secondAttribute="trailing" id="REX-cP-B4f"/>
+                <constraint firstAttribute="trailing" secondItem="RBc-p7-Axs" secondAttribute="trailing" constant="8" id="RmT-fJ-chv"/>
+                <constraint firstItem="PF2-RV-UGd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="SlA-uA-IVc"/>
+                <constraint firstItem="RBc-p7-Axs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="X2R-cr-8V8"/>
+                <constraint firstItem="KfW-wA-HQw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="bjB-ET-yGp"/>
+                <constraint firstItem="PF2-RV-UGd" firstAttribute="top" secondItem="RBc-p7-Axs" secondAttribute="bottom" constant="41" id="bjX-Oy-3vt"/>
+                <constraint firstItem="QR7-5p-Y3t" firstAttribute="top" secondItem="RBc-p7-Axs" secondAttribute="bottom" constant="3" id="zlF-de-K9P"/>
+            </constraints>
+            <point key="canvasLocation" x="469" y="308"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanWriteContentCtr">
+            <connections>
+                <outlet property="contentTextView" destination="AgC-1Y-2rs" id="tOE-AE-PNd"/>
+                <outlet property="imgScanScrollView" destination="mda-fj-GcZ" id="FSA-jk-ASE"/>
+                <outlet property="timeLabel" destination="NZo-SF-Mru" id="esu-ZL-fUB"/>
+                <outlet property="titleLabel" destination="geq-yP-DM5" id="AYr-3O-kPY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="qm3-91-rv0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geq-yP-DM5">
+                    <rect key="frame" x="8" y="8" width="584" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZo-SF-Mru">
+                    <rect key="frame" x="561" y="38" width="31" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-1Y-2rs">
+                    <rect key="frame" x="8" y="63" width="584" height="389"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mda-fj-GcZ" customClass="ImageScrollView">
+                    <rect key="frame" x="8" y="472" width="584" height="120"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="NmB-M0-Uyw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="geq-yP-DM5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="2tR-KQ-KXf"/>
+                <constraint firstItem="AgC-1Y-2rs" firstAttribute="top" secondItem="NZo-SF-Mru" secondAttribute="bottom" constant="10" id="8RI-E6-NEm"/>
+                <constraint firstItem="mda-fj-GcZ" firstAttribute="top" secondItem="AgC-1Y-2rs" secondAttribute="bottom" constant="20" id="BPO-QS-DK1"/>
+                <constraint firstAttribute="bottom" secondItem="mda-fj-GcZ" secondAttribute="bottom" constant="8" id="DPm-ix-9Ur"/>
+                <constraint firstAttribute="trailing" secondItem="NZo-SF-Mru" secondAttribute="trailing" constant="8" id="HLd-Xr-BLJ"/>
+                <constraint firstItem="mda-fj-GcZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Ohr-M7-Tg1"/>
+                <constraint firstAttribute="trailing" secondItem="geq-yP-DM5" secondAttribute="trailing" constant="8" id="PrH-95-vIl"/>
+                <constraint firstItem="geq-yP-DM5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="XOD-gH-RZy"/>
+                <constraint firstItem="NZo-SF-Mru" firstAttribute="top" secondItem="geq-yP-DM5" secondAttribute="bottom" constant="10" id="dZb-iG-VGD"/>
+                <constraint firstItem="AgC-1Y-2rs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="eXa-Jq-FAs"/>
+                <constraint firstAttribute="trailing" secondItem="mda-fj-GcZ" secondAttribute="trailing" constant="8" id="hwv-cw-72A"/>
+                <constraint firstAttribute="trailing" secondItem="AgC-1Y-2rs" secondAttribute="trailing" constant="8" id="zGF-ZX-AA0"/>
+            </constraints>
+            <point key="canvasLocation" x="205" y="250"/>
+        </view>
+    </objects>
+</document>

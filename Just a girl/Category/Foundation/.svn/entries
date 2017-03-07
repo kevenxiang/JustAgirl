@@ -1,0 +1,76 @@
+10
+
+dir
+330
+svn://ios@192.168.1.245/ios/KouDaiDuoBao/KouDaiDuoBao/Category/Foundation
+svn://ios@192.168.1.245/ios
+
+
+
+2016-04-11T18:06:16.480744Z
+61
+ios2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+609ef1a9-24fa-426e-af2c-1dc6cd1842c9
+
+NSArray
+dir
+
+NSTimer
+dir
+
+NSIndexPath
+dir
+
+NSManagedObjectContext
+dir
+
+NSSet
+dir
+
+NSException
+dir
+
+NSDateFormatter
+dir
+
+NSURL
+dir
+
+NSDictionary
+dir
+
+NSObject
+dir
+
+NSString
+dir
+
+NSBundle
+dir
+
+NSData
+dir
+
+NSFileManager
+dir
+
+NSNull
+dir
+
+NSDate
+dir
+

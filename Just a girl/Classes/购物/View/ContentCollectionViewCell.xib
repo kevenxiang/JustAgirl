@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ContentCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="221"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="221"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Zy-Sv-M35">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="221"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pY-7r-Ygi">
+                        <rect key="frame" x="5" y="99" width="362" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OG9-go-u8T">
+                        <rect key="frame" x="5" y="133" width="362" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NC6-pU-GzF">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="221"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5Zy-Sv-M35" secondAttribute="bottom" id="Bq3-Um-sDl"/>
+                <constraint firstAttribute="trailing" secondItem="NC6-pU-GzF" secondAttribute="trailing" id="Cu6-eB-wRW"/>
+                <constraint firstItem="5Zy-Sv-M35" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Psq-vG-Nef"/>
+                <constraint firstItem="4pY-7r-Ygi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="SRs-TV-flK"/>
+                <constraint firstItem="NC6-pU-GzF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SbP-TT-iAv"/>
+                <constraint firstItem="OG9-go-u8T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Wkp-Uv-U7G"/>
+                <constraint firstAttribute="trailing" secondItem="4pY-7r-Ygi" secondAttribute="trailing" constant="5" id="ade-Y0-s2p"/>
+                <constraint firstItem="OG9-go-u8T" firstAttribute="top" secondItem="4pY-7r-Ygi" secondAttribute="bottom" constant="10" id="cQZ-vg-aBr"/>
+                <constraint firstItem="5Zy-Sv-M35" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jE9-gA-cCu"/>
+                <constraint firstAttribute="trailing" secondItem="5Zy-Sv-M35" secondAttribute="trailing" id="mV1-j6-8iz"/>
+                <constraint firstItem="NC6-pU-GzF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sWz-ax-95W"/>
+                <constraint firstAttribute="bottom" secondItem="NC6-pU-GzF" secondAttribute="bottom" id="w50-JZ-cA2"/>
+                <constraint firstItem="4pY-7r-Ygi" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ylr-ZX-6AB"/>
+                <constraint firstAttribute="trailing" secondItem="OG9-go-u8T" secondAttribute="trailing" constant="5" id="z5a-zy-F0c"/>
+            </constraints>
+            <size key="customSize" width="372" height="221"/>
+            <connections>
+                <outlet property="bgImgView" destination="5Zy-Sv-M35" id="dCJ-uT-8Mt"/>
+                <outlet property="overLayView" destination="NC6-pU-GzF" id="bYe-pb-FhJ"/>
+                <outlet property="subTitleLabel" destination="OG9-go-u8T" id="gcm-Rq-aM4"/>
+                <outlet property="titleLabel" destination="4pY-7r-Ygi" id="gD7-Qb-OKx"/>
+            </connections>
+            <point key="canvasLocation" x="1206" y="284.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
